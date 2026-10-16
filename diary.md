@@ -1,4 +1,4 @@
-entry 1: develop the spending function 
+entry 1: develop the budget calculator  
 date : 13/10/2026
 what i was trying to do(goal): i wanted to develop a budget calculator for my budgetlow project application that could calculate monthly expenses and shows users their balance remaining after spending.
 my approach: i worked on the code by myself by went back to have a look at my lab ticket for module 6, but my code was wrong because got stuck and confuse on how to use calculate the total using sum() and remaining 
@@ -17,4 +17,11 @@ total, remaining = calculate_budget(monthly_income, monthly_expenses)
 
 print("Total expenses: $", total)
 print("Remaining balance: $", remaining)" gemini response with a longer cells which makes me decided not to use that because it makes me more confusing.
+![Budget calculator gemini conversation](images/budget_calculator.png)
 reflection: this part help me to understand hwo python function can accept values , do the calculation and shows the result. i learned that even the function works correcty , its output can still be improved to make the application more easiler for users.
+
+entry 2: developing the spending summary 
+what i was trying to do(goal): i wanted to improve my application by adding spending summary that could show how much money was spent in each category such as food, transport etc.
+prompt: i use lab ticket dictionaries (module 6) and gemini to help me write a python function for managing spending data . the task required function to calculate specific category, add a new transaction and summarise the total spending for each category. this is what i asked gemini to check it for me "def summary(spending):\n", " \"\"\"Returns a dictionary that maps every category to its total.\"\"\"\n", " summary = {}\n", " for category, transactions_list in spending.items():\n", " summary[category] = total_for(spending, category)\n", " return summary\n", "\n", "# Populate the spending dictionary with the initial transactions\n", "for transaction in transactions:\n", " add_transaction(spending, transaction)\n" ] }, { "cell_type": "code", "execution_count": 22, "id": "681f98df", "metadata": { "colab": { "base_uri": "https://localhost:8080/", "height": 156 }, "id": "681f98df", "outputId": "7adeef0f-a972-4bc8-b9ed-a155560b2584" }, "outputs": [ { "output_type": "stream", "name": "stdout", "text": [ "Number of transactions per category:\n" ] }, { "output_type": "display_data", "data": { "text/plain": [ "{'rent': 1,\n", " 'groceries': 3,\n", " 'transport': 3,\n", " 'eating out': 3,\n", " 'entertainment': 2,\n", " 'phone': 1,\n", " 'textbook': 1}" ] }, "metadata": {} } ], "source": [ "# Your own feature goes here.\n", "def for category, transactions_list in spending.items():\n", " counts[category] = len(transactions_list)\n", " return counts\n", "\n", "transaction_counts = transaction_counts_by_category(spending)\n", "\n", "print(\"Number of transactions per category:\")\n", can i use this for the spending summary" then i asked it to add monthly summary as well.
+what i kept and changes : i used the suggest code that it has fixed it for me and kept most of my python , i test the functions and it can handle spending categories and transactions well.
+reflection : i learned that it is very important ot consider missing the categories and new transactions so the result of the spending summary can be accurate.
