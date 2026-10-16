@@ -62,6 +62,6 @@ Add more spending analysis.
 
 Improve the user interface.
 
-Security
+# Security
 
 API keys should be kept private and not uploaded to GitHub.
