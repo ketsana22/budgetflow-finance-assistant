@@ -1,4 +1,4 @@
-# budgetflow-finance-assistant
+# Budgetflow-finance-assistant
 Project description
 -
 BudgetFlow is a personal finance assistant designed to help users understand their spending and manage their monthly budget. It uses Python to calculate expenses, track remaining balances, and provide spending summaries. The project aims to make basic financial management easier through a simple and user-friendly interface.
